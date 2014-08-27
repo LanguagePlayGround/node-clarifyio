@@ -1,4 +1,4 @@
-Op3nvoice API for Node
+Clarify API for Node
 ========================
 
 Install
@@ -11,10 +11,10 @@ npm install clarifyio
 Usage
 ------------------------
 
-Read [here](https://api-beta.op3nvoice.com/docs) for more detailed description.
+Read [here](https://api.clarify.io/docs) for more detailed description.
 
 ```
-var client = new clarifyio.Client("api-beta.op3nvoice.com", "your-auth-key");
+var client = new clarifyio.Client("api.clarify.io", "your-auth-key");
 
 client.getBundles(opts, callback);
 client.createBundle(data, callback);
