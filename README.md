@@ -1,20 +1,20 @@
-Clarify API for Node
-========================
+# Clarify API for Node
 
-Install
-------------------------
+## Install
 
 ```
 npm install clarifyio
 ```
 
-Usage
-------------------------
+## Usage
 
 Read [here](https://api.clarify.io/docs) for more detailed description.
 
+`apiKey` is required as the first parameter for Clarify Client instantiation. `options` are...optional.
+
 ```
-var client = new clarifyio.Client("api.clarify.io", "your-auth-key");
+const clarify = require('clarifyio');
+const client = new clarify.Client(apiKey, options);
 
 client.getBundles(opts, callback);
 client.createBundle(data, callback);
@@ -34,3 +34,11 @@ client.removeTrack(bundleId, track, callback);
 client.search(opts, callback);
 
 ```
+
+### Client Options
+
+- `baseUrl`: string - defaults to  https://api.clarify.io
+- `apiVersion`: number - defaults to 1;
+- `headers`: object - extra header fields
+
+_note: "Authorization" header is automatically set based on apiKey_
