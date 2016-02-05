@@ -1,0 +1,15 @@
+{
+  "extends": "airbnb/base",
+  "root": true,
+  "ecmaFeatures": {
+    "modules": false
+  },
+  "env": {
+    "mocha": true
+  },
+  "rules": {
+    "comma-dangle": 0,
+    "no-param-reassign": 0,
+    "strict": [1, "global"]
+  }
+}
