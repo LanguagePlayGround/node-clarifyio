@@ -19,8 +19,12 @@ const client = new clarify.Client(apiKey, options);
 client.getBundles(opts, callback);
 client.createBundle(data, callback);
 client.getBundlefunction(bundleId, opts, callback);
-client.removeBundle(bundleId, callback);
 client.updateBundle(bundleId, data, callback);
+client.removeBundle(bundleId, callback);
+
+client.getInsights(bundleId, opts, callback);
+client.createInsight(bundleId, data, callback);
+client.getInsight(bundleId, insightId, callback);
 
 client.getMetadata(bundleId, opts, callback);
 client.updateMetadata(bundleId, data, callback);
