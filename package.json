@@ -16,6 +16,9 @@
     "mocha": "^2.4.5",
     "should": "^3.3.2"
   },
+  "files": [
+    "lib"
+  ],
   "homepage": "http://docs.clarify.io",
   "keywords": [
     "clarify",
